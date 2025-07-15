@@ -18,7 +18,7 @@ app.use((req,res,next) => {
 app.use('/api/user',userRoutes)
 
 //connect to db
-mongoose.connect(process.env.DB_URI)
+mongoose.connect(process.env.DB_URI|| "mongodb://localhost:27017/lmsuser")
     .then(()=>{
         app.listen(port, () => {
             console.log(process.env.DB_URI);
