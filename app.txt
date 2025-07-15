@@ -1,0 +1,6 @@
+.env.example   to .env 
+
+
+
+npm i  
+
