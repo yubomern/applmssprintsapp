@@ -74,7 +74,7 @@ io.on("connection", (socket) => {
 });
 
 const corsOptions = {
-  origin: [process.env.FRONT_URL, process.env.FRONT_URL||"*" , "*"],
+  origin: [process.env.FRONT_URL, process.env.FRONT_URL||"http://localhost:5173" , "http://localhost:5173"],
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
   allowedHeaders: [

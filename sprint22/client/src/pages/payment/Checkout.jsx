@@ -14,8 +14,9 @@ function Checkout() {
   }
 
   async function handleCheckout() {
+    let app_api ="http://localhost:3000";
     setLoading(true);
-    fetch(`${import.meta.env.VITE_APP_COURSIFY_API}/api/v1/payment/checkout`, {
+    fetch(`${app_api}/api/v1/payment/checkout`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

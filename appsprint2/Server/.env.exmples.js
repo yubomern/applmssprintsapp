@@ -1,18 +1,3 @@
-CLOUD_NAME=applms
-CLOUD_API_KEY=528784262198782
-CLOUD_API_SECRET=ngKaz63JkotJ2PgHMrC1MhzXkPc
-CLOUDINARY_URL=cloudinary://528784262198782:ngKaz63JkotJ2PgHMrC1MhzXkPc@tradingfish
-MONGO_URL=mongodb://localhost:27017/lmsuser
-SMTP_USERNAME=ayoubsmayen
-SMTP_PASSWORD=1234
-SCRET=applms
-FRONT_URL=http://localhost:3000/
-JWT_SECRET_KEY=applmstoken
-
-
-
-
-
 PORT = 4000
 MONGODB_URL=mongodb://localhost:27017/appLms
 JWT_SECRET = applmstoken

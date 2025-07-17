@@ -111,8 +111,9 @@ export function setChatroomIdThunk(senderId) {
       }
     }
     if (!isChatroomExist) {
+      let app_api ="http://localhost:3000";
       fetch(
-        `${import.meta.env.VITE_APP_COURSIFY_API}/api/v1/chat/chatroom/create`,
+        `${app_api}/api/v1/chat/chatroom/create`,
         {
           credentials: "include",
           method: "POST",

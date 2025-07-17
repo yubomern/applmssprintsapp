@@ -1,9 +1,11 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
+let app_api ="http://localhost:3000";
+
 export const lmsAuthApi = createApi({
   reducerPath: "lmsAuth",
   baseQuery: fetchBaseQuery({
-    baseUrl: `${import.meta.env.VITE_APP_COURSIFY_API}/api/v1`,
+    baseUrl: `${app_api}/api/v1`,
     credentials: "include"
   }),
   tagTypes: ["User", "Course"],
